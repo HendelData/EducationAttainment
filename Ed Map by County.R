@@ -13,6 +13,8 @@ if (!exists("api_census")) {
 stateABBR <- "IA"
 ed_level="BS"
 apiyr <- 2021
+
+#CHANGE PATH TO A LOCAL FOLDER WHERE YOU STORED THE DATA
 path_to_saved_data <- "C:/Users/marce/Documents/R/EducationalAttainment/"
 
 #ASSIGN TEXT FOR TITLE
