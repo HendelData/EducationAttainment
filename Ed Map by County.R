@@ -80,7 +80,7 @@ ea <- ea[,c(2,3,14:20)]
 options(digits=10)
 
 #GET SHAPEFILE FOR COUNTIES IN STATE OF INTEREST
-county <- counties(stateABBR, cb=FALSE, resolution="20m")
+county <- counties(stateABBR, cb=TRUE, resolution="20m")
 county <- subset(county, county$NAME!='Aleutians West')
 c2 <- merge(county, ea, by=c("STATEFP","COUNTYFP"), all.x=TRUE)
 
